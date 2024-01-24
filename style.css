@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #cc3363;
+  position: relative;
+  background-image: linear-gradient(
+      rgba(204, 51, 99, 0.7),
+      rgba(204, 51, 99, 0.7)
+    ),
+    url(5297135.jpg);
+  background-size: contain;
+}
+
+.carousel {
+  position: relative;
+  max-width: 900px;
+  width: 100%;
+  padding: 50px 0px;
+  background-color: #ffff;
+  border-radius: 19px;
+  box-shadow: 13px 3px 65px -3px rgba(0, 0, 0, 0.75);
+  overflow: hidden;
+}
+
+.carousel .image {
+  height: 170px;
+  width: 170px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.carousel .slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.slide p {
+  text-align: center;
+  padding: 0 160px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #333;
+}
+
+.slide .quote-icon {
+  font-size: 30px;
+  color: #454955;
+}
+
+.slide .details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.details .name {
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+}
+
+.details .job {
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+}
+
+/*swiper button CSS*/
+
+.nav-btn {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  transform: translateY(30px);
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.nav-btn::after,
+.nav-btn::before {
+  font-size: 20px;
+  color: black;
+}
+
+.swiper-pagination-bullet {
+  background-color: #cc3363;
+}
